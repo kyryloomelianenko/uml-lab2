@@ -135,9 +135,9 @@ System -->> User: recommendations
 | Functional Requirement | Use Case | Classes | Sequence Diagram |
 |----------------------|----------|--------|------------------|
 | FR-01 | Пошук ресторану | User, Restaurant | ✔ |
-| FR-02 | Пошук за локацією | User, Restaurant | ❌ |
+| FR-02 | Пошук за локацією | User, Restaurant | — |
 | FR-03 | Перегляд рекомендацій | User, RecommendationService | ✔ |
-| FR-04 | Перегляд рейтингу | User, Review | ❌ |
-| FR-05 | Фільтрація за кухнею | User, Filter | ❌ |
-| FR-06 | Перегляд профілю ресторану | User, Restaurant | ❌ |
+| FR-04 | Перегляд рейтингу | User, Review | — |
+| FR-05 | Фільтрація за кухнею | User, Filter | — |
+| FR-06 | Перегляд профілю ресторану | User, Restaurant | — |
 | FR-07 | Аналіз відгуків | RecommendationService, Review | ✔ |
