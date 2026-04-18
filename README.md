@@ -47,6 +47,4 @@ User --> UC4
 User --> UC5
 User --> UC6
 
-Admin --> UC7
-
 UC3 -->|<<include>>| UC7
