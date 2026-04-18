@@ -48,3 +48,46 @@ User --> UC5
 User --> UC6
 
 UC3 -->|<<include>>| UC7
+
+## Class Diagram
+classDiagram
+
+class User {
+  -id : int
+  -name : String
+  +searchRestaurant()
+}
+
+class Restaurant {
+  -id : int
+  -name : String
+  -location : String
+  -rating : float
+  +getDetails()
+}
+
+class Dish {
+  -id : int
+  -name : String
+  -price : double
+}
+
+class Review {
+  -text : String
+  -rating : int
+}
+
+class RecommendationService {
+  +getRecommendations()
+}
+
+class Filter {
+  +filterByCuisine()
+}
+
+User --> Restaurant
+Restaurant --> Dish
+Restaurant --> Review
+RecommendationService --> Dish
+RecommendationService --> Review
+User --> Filter
