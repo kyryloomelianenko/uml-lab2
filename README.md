@@ -51,6 +51,7 @@ UC3 -->|<<include>>| UC7
 ```
 
 ## Class Diagram
+```mermaid
 classDiagram
 
 class User {
