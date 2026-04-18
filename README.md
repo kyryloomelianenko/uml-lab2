@@ -105,13 +105,14 @@ participant RecommendationService
 participant Restaurant
 participant Review
 
-User ->> System: Обрати ресторан
+User ->> System: selectRestaurant()
 System ->> Restaurant: getDetails()
 
 System ->> RecommendationService: getRecommendations()
 
-RecommendationService ->> Review: аналіз відгуків
-Review -->> RecommendationService: дані
+RecommendationService ->> Review: analyzeReviews()
+Review -->> RecommendationService: reviewsData
 
-RecommendationService -->> System: список страв
-System -->> User: рекомендації
+RecommendationService -->> System: dishList
+System -->> User: recommendations
+```
