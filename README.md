@@ -95,12 +95,12 @@ class Filter {
   +filterByCuisine()
 }
 
-User --> Restaurant
-Restaurant --> Dish
-Restaurant --> Review
-RecommendationService --> Dish
-RecommendationService --> Review
-User --> Filter
+User "1" --> "0..*" Restaurant : searches
+Restaurant "1" --> "0..*" Dish : contains
+Restaurant "1" --> "0..*" Review : has
+RecommendationService "1" --> "0..*" Dish : recommends
+RecommendationService "1" --> "0..*" Review : analyzes
+User "1" --> "0..1" Filter : uses
 ```
 
 ---
