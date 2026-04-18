@@ -98,9 +98,8 @@ User --> Filter
 
 ```mermaid
 sequenceDiagram
-autonumber
 
-actor User
+participant User
 participant System
 participant RecommendationService
 participant Restaurant
