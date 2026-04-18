@@ -93,7 +93,7 @@ Restaurant --> Review
 RecommendationService --> Dish
 RecommendationService --> Review
 User --> Filter
-
+```
 ## Sequence Diagram
 
 ```mermaid
