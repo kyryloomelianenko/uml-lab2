@@ -93,3 +93,25 @@ Restaurant --> Review
 RecommendationService --> Dish
 RecommendationService --> Review
 User --> Filter
+
+## Sequence Diagram
+
+```mermaid
+sequenceDiagram
+
+participant User
+participant System
+participant RecommendationService
+participant Restaurant
+participant Review
+
+User ->> System: Обрати ресторан
+System ->> Restaurant: getDetails()
+
+System ->> RecommendationService: getRecommendations()
+
+RecommendationService ->> Review: аналіз відгуків
+Review -->> RecommendationService: дані
+
+RecommendationService -->> System: список страв
+System -->> User: рекомендації
