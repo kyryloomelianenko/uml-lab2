@@ -48,8 +48,8 @@ User --> UC5
 User --> UC6
 
 UC3 -->|<<include>>| UC7
+```
 
-```mermaid
 ## Class Diagram
 classDiagram
 
